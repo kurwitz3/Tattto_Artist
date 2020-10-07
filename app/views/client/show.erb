@@ -1,6 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="/stylesheets/show.css"/></head>
+
 <h1 align="center"><%=@client.name%></h1><br>
-<h1>Email:  <%=@client.email%></h1><br>
-<h1>Current Tattoo:  <%=@client.tattoo%></h1><br>
+<h1>Email: <br><%=@client.email%></h1><br>
+<h1>Current Tattoo: <br><%=@client.tattoo%></h1><br>
 <a href="/clients/<%=@client.id%>/edit"><h2 style="font-size:50px">Edit</h2></a>
 
 
@@ -8,4 +15,5 @@
 <input  id="hidden" type="hidden" name="_method"  value="delete">
 <input type="submit" value="delete" style="width:100px; height:50px;">
  </form>
- 
+
+ </html>
