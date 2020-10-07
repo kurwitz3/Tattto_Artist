@@ -13,37 +13,37 @@
   
     /* --- Welcome Page Styles --- */
     body {
-       
-        background-color: rgb(9, 24, 240);
-        color: #333;
+      background-color: rgb(245, 10, 198);
+      color: rgb(242, 12, 184);
       font-family: Brush Script MT;
       line-height: 18px;
     }
+  
     .wrapper {
-      background-color: rgb(162, 159, 159);
+      background: rgb(0, 0, 0);
       -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
       -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
       box-shadow: 0 0 10px rgba(0,0,0,.3);
       margin: 16px auto;
-      max-width: 960px;
+      max-width: 700px;
       padding: 2.25%; /* 18px / 800px */
       width: 85%;
     }
   
     h1 {
-      font-size: 65px;
+      font-size: 60px;
       line-height: 54px;
     }
   
     h2 {
-      border-bottom: 2px solid rgb(3, 3, 3);
+      border-bottom: 2px solid rgb(245, 5, 217);
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 16px;
     }
   
     h3 {
-      font-size: 40px;
+      font-size: 18px;
       line-height: 36px;
     }
   
@@ -112,12 +112,11 @@
       font-size: 18px;
       line-height: 24px;
     }
-  }
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-    float: right;
-    width: 30%;
-    padding: 0px;
+  
+  .column {
+    float: left;
+    width: 33%;
+    padding: 5px;
   }
   
   /* Clear floats after image containers */
@@ -126,3 +125,4 @@
     clear: both;
     display: table;
   }
+}
