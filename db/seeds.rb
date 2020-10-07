@@ -1,0 +1,39 @@
+Blaine = Artist.create(name:"Blaine")
+joe = Client.create(name: "Joe", email:"Joe@aol.com",tattoo:"Back piece,Old school eagle",artist_id: 1)
+joe.Artist = Blaine 
+megan =Client.create(name: "Megan", email:"Megan@aol.com",tattoo:"On Right Hip,Colorful flowers",artist_id: 1)
+megan.Artist = Blaine
+justin = Client.create(name: "Justin", email:"Justin@aol.com",tattoo:"On forearm sleeve,Avengers",artist_id: 1)
+justin.Artist = Blaine
+Marcel = Client.create(name: "Marcel", email:"Marcel@aol.com",tattoo:"On neck,Black and white skull",artist_id: 1)
+Marcel.Artist = Blaine
+
+Liaa= Artist.create(name:"Liaa")
+chris = Client.create(name: "Chris", email:"Chris@aol.com",tattoo:"On Ribs, Old sailor ship",artist_id: 2)
+chis.Artist= Liaa
+sam = Client.create(name: "Sam", email:"Sam@aol.com",tattoo:"upper arm sleeve ,Trash Polka demons",artist_id: 2)
+sam.Artist = Liaa
+mike = Client.create(name: "Mike", email:"Mike@aol.com",tattoo:"On left forearm , tiger ",artist_id: 2)
+mike.Artist = Liaa
+rick = Client.create(name: "Rick", email:"Rick@aol.com",tattoo:"On lip , YOLO",artist_id: 2)
+rick.Artist= Liaa
+
+Bobby = Artist.create(name:"Bobby")
+axe = Client.create(name: "Axe", email:"Axe@aol.com",tattoo:"On hand, flower ",artist_id: 3)
+axe.Artist = Bobby 
+steve = Client.create(name: "Steve", email:"Steve@aol.com",tattoo:"upper arm  , Yoda ",artist_id: 3)
+steve.Artist = Bobby 
+waylon = Client.create(name: "Waylon ", email:"Waylon@aol.com",tattoo:"On finger , pullme  ",artist_id: 3)
+waylon.Artist = Bobby 
+zane = Client.create(name: "Zane", email:"Zane@aol.com",tattoo:"On forhead , Peace sign",artist_id: 3)
+zane.Artist = Bobby 
+
+Sally = Artist.create(name:"Sally")
+olive = Client.create(name: "Olive", email:"Olive@aol.com",tattoo:"On Ribs, Butterflies",artist_id:3)
+olive.Artist = Sally
+willie = Client.create(name: "Willie", email:"Willie@aol.com",tattoo:"upper arm sleeve , American Flag",artist_id:3)
+willie.Artist = Sally
+paul = Client.create(name: "Paul", email:"PAUL@aol.com",tattoo:"On left forearm , Portrait",artist_id:3)
+paul.Artist = Sally
+sienna = Client.create(name: "Sienna", email:"Sienna@aol.com",tattoo:"On foot , Blue bird",artist_id:4)
+sienna.Artist = Sally

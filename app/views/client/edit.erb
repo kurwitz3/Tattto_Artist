@@ -1,0 +1,13 @@
+<h1>Edit Client</h1>
+<form action="/clients/<%= @client.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  
+    <label for="email">Email:</label>
+    <input type="text" name="email" value="<%= @client.email%>">
+  </p>
+  <p>
+    <label for="tattoo">Cook Tattoo:</label>
+    <input type="text" name="tattoo" value="<%= @client.tattoo%>">
+  </p>
+  <input type="submit" value="Submit">
+</form>

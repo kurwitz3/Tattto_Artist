@@ -1,0 +1,29 @@
+
+<head> <style>body{background-image: url("download-5.jpg")}</style>
+<link rel="stylesheet" href="/stylesheets/artist.css" /></head>
+<body text="#FFD700">
+<h1 style="text-align:center" >Welcome Back! </h1>
+<img src="download-7.jpg" ALIGN="right">
+<hX style="font-size:35px" >Current Clients</hX>
+   <% @client.each do  |client| %>
+   <%if client.artist_id == current_user.id%>
+    <ul>
+    <a href="/clients/<%=client.id%>" style="font-size:30px"> <%=client.name%></a>
+      <li style="font-size:22px" ><%=client.email%></li>
+      <li style="font-size:22px" ><%=client.tattoo%></li><br>
+   </ul>
+   <%end%>
+   <%end%>
+   
+  <div align="center">
+
+   <form action="/clients/new" method="get">
+   <h1 style="text-align:center"> Create a new Client</h1>
+    <table>
+     <tr>
+      <td style="text-align:center"><input type="submit" value="Create"></td>
+     </tr>
+    </table>
+   </div>
+  </form>
+</body>
