@@ -32,7 +32,7 @@ end
     redirect to "/artists"
   end
 
-   delete 'clients/:id' do 
+   delete '/clients/:id' do 
     @client = Client.find_by_id(params[:id])
     @client.delete
     redirect to  "/artists"
