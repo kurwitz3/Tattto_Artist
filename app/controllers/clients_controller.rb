@@ -7,7 +7,7 @@ end
 
 post "/clients" do 
     if params[:name] == "" || params[:email] == "" || params[:tattoo] == ""
-        erb :failure 
+        erb :"client/new" 
     else
   @client = Client.create(:name => params[:name],:email => params[:email],:tattoo => params[:tattoo],:artist_id => current_user.id)
 
@@ -21,7 +21,11 @@ end
  
  get '/clients/:id/edit' do  
     @client = Client.find_by_id(params[:id])
+    if @client.artist.id == current_user.id
     erb :"client/edit"
+    else 
+        redirect "/artists"
+    end
   end
 
   patch '/clients/:id' do 
@@ -34,7 +38,9 @@ end
 
    delete '/clients/:id' do 
     @client = Client.find_by_id(params[:id])
+    if @client.artist.id == current_user.id
     @client.delete
+    end
     redirect to  "/artists"
    end
   

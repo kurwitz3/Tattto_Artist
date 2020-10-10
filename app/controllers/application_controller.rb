@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
   
   post "/signup" do 
     if params[:name]== "" || params[:password] == "" || params[:email] == ""
-      redirect "/failure"
+      redirect "/signup"
     else
       @new_artist = Artist.new(:name => params[:name],:password => params[:password],:email => params[:email])
       @new_artist.save 
@@ -48,9 +48,6 @@ class ApplicationController < Sinatra::Base
   end
       
   helpers do
-    def logged_in?
-      !!session[:user_id]
-    end
     
     def current_user
       Artist.find(session[:user_id])

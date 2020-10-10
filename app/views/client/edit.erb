@@ -1,19 +1,23 @@
-<head><link rel="stylesheet" href="/stylesheets/edit.css" /></head>
+<head>
+<style>body  {
+    background-image: url("/street.jpg");
+    background-size: cover;
+  } </style>
+<link rel="stylesheet" href="/stylesheets/edit.css" /></head>
+
 <h1 style="text-align:center">Edit Client</h1><br>
 
 <div align="center">
 <form action="/clients/<%= @client.id %>" method="post">
   <input type="hidden" name="_method" value="patch">
-  <table>
+<table>
   <tr>
-   
    <td><h2> Email:</h2><td><input type="text" name="email" value="<%= @client.email%>"></td>
    </tr>
-   <tr>
-  
-   <td><h2>Tattoo:</h2><td><input type="text" name="tattoo" value="<%= @client.tattoo%>"></td>
+  <tr>
+    <td><h2>Tattoo:</h2><td><input type="text" name="tattoo" value="<%= @client.tattoo%>"></td>
    </tr>
-   </table>
+</table>
   
   <input type="submit" value="Submit">
 </form>

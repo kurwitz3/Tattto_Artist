@@ -14,18 +14,18 @@
     /* --- Welcome Page Styles --- */
     body {
       background-color: rgb(0, 0, 0);
-      color: rgb(255, 253, 253);
-      font-family: new courier;
+      color: rgb(4, 40, 244);
+      font-family: Apple Chancery, cursive ;
       line-height: 18px;
     }
   
     .wrapper {
-      background: rgb(85, 85, 85);
+      background: rgba(85, 85, 85, 0);
       -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
       -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
       box-shadow: 0 0 10px rgba(0,0,0,.3);
       margin: 16px auto;
-      max-width: 960px;
+      max-width: 700px;
       padding: 2.25%; /* 18px / 800px */
       width: 85%;
     }
@@ -36,14 +36,14 @@
     }
   
     h2 {
-      border-bottom: 2px solid rgb(85, 84, 85);
+      border-bottom: 2px solid rgba(85, 84, 85, 0);
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 16px;
     }
   
     h3 {
-      font-size: 18px;
+      font-size: 28px;
       line-height: 36px;
     }
   
@@ -77,7 +77,7 @@
     }
   
     footer.branding {
-      border-top: 2px solid #ccc;
+      border-top: 2px solid rgba(204, 204, 204, 0);
       margin-top: 20px;
       padding-top: 20px;
     }
@@ -112,5 +112,16 @@
       font-size: 18px;
       line-height: 24px;
     }
+  }
+  a:link {
+    color: rgb(2, 6, 248);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(2, 6, 248);
+    background-color: transparent;
+    text-decoration: none;
   }
   

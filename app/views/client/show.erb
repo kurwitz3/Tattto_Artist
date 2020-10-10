@@ -2,18 +2,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<style>body  {
+    background-image: url("/smoking.jpg");
+    background-size: cover;
+  } </style>
 <link rel="stylesheet" href="/stylesheets/show.css"/></head>
 
-<h1 align="center"><%=@client.name%></h1><br>
-<h1>Email: <br><%=@client.email%></h1><br>
-<h1>Current Tattoo: <br><%=@client.tattoo%></h1><br>
-<a href="/clients/<%=@client.id%>/edit"><h2 style="font-size:50px">Edit</h2></a>
+<h1 align="left"><%=@client.name%></h1>
+<h3>Email: <%=@client.email%></h3><br>
+<h3>Current Tattoo: <%=@client.tattoo%></h3>
+<a href="/clients/<%=@client.id%>/edit"><h3>Update</h3></a>
 
 
  <form  action="/clients/<%= @client.id %>" method="post">
 <input  id="hidden" type="hidden" name="_method"  value="delete">
-<input type="submit" value="delete" >
+<input type="submit" value="delete" style="width:85px; height:30px" >
  </form>
 
  </html>
