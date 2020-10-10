@@ -17,7 +17,7 @@ First type bundle install in to the command line. Once you have all the gems ins
 
 
 Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/'reliable-karma-5354'/tattoo_artist. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+ This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
 License
 The gem is available as open source under the terms of the MIT License.
