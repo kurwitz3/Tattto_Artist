@@ -1,13 +1,26 @@
-DESCRIPTION-
-This is my project on Tattoo Artist. The project basically allows tattto artist to keep 
-track of thier clients and the current tattoos they are working on. If you don't have an
-account,you just do a quick sign up. Once logged in you will be directed to your personal 
-artist page where a list of your current clients will be listed. From this page you will be 
-able to view each client, update the client, or delete the client.
+Tattoo Artist 
+Welcome to your new gem! This is a gem that allows tattoo artists to keep track of all their clients and the current
+tattoo that they are working on. 
 
-INSTRUCTIONS- 
-In this project I used Ruby, ActiveRecord, and Sinatra .I used a Sqlite3 database. I also used Shotgun and thin 
-for easy editing in the server. Dending on which ActiveRecord you have downloaded on your machine you may need to 
-update the  version of ActiveRecord in the Gemfile. Currently I have 5.2 but you may need to change this. Once your 
-gems are ready run bundle install. After bundle run shotgun in your terminal it will active your server. Copy and paste
-the local host in to your browser and the program will begin.
+Installation
+Add this line to your application's Gemfile:
+
+gem 'tattoo_artist'
+And then execute:
+
+$ bundle
+Or install it yourself as:
+
+$ gem install tattoo_artist
+Usage
+First type bundle install in to the command line. Once you have all the gems installed run shotgun in your terminal. Copy and paste the localhost into your browser and the app will be loaded.
+
+
+Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/'reliable-karma-5354'/tattoo_artist. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+
+License
+The gem is available as open source under the terms of the MIT License.
+
+Code of Conduct
+Everyone interacting in the Tattto Artist project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
